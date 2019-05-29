@@ -1198,7 +1198,8 @@ export class OAuthService extends AuthConfig {
 
         this.createLoginUrl(additionalState, loginHint, null, false, addParams)
             .then(function (url) {
-                location.href = url;
+                console.log(url);
+                // location.href = url;
             })
             .catch(error => {
                 console.error('Error in initImplicitFlow', error);
